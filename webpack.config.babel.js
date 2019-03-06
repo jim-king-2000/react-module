@@ -29,12 +29,7 @@ export default {
     ]
   },
   externals: [
-    'next',
-    'react',
-    'react-dom',
-    'react-icons',
-    'universal-cookie',
-    'styled-components'
+    /^next(\/.+)?$/
   ],
   optimization: {
     // minimizer: [new TerserPlugin()]
