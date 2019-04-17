@@ -29,7 +29,9 @@ export default {
     ]
   },
   externals: [
-    /^next(\/.+)?$/
+    /^next(\/.+)?$/,
+    'grommet',
+    'grommet-theme-dxc'
   ],
   optimization: {
     // minimizer: [new TerserPlugin()]

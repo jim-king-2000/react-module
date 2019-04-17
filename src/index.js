@@ -1,4 +1,8 @@
-import React from 'react';
-import Router from 'next/router';
+import { Grommet, Button } from 'grommet';
+import { dxc } from "grommet-theme-dxc";
 
-export const B = () => <button onClick={() => Router.push('/')}>click</button>;
+export const B = () => (
+  <Grommet theme={dxc}>
+    <Button label='test' />
+  </Grommet>
+);
