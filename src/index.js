@@ -1,10 +1,5 @@
-import { Grommet, Button } from 'grommet';
-import { dxc } from "grommet-theme-dxc";
+import fetch from 'isomorphic-unfetch'
 
-const C = () => <Button label='test' />;
-
-export const B = () => (
-  <Grommet theme={dxc}>
-    <C />
-  </Grommet>
-);
+export default function getStar() {
+  return fetch('https://api.github.com/repos/zeit/next.js');
+}
